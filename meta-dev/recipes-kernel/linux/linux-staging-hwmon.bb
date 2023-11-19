@@ -4,6 +4,7 @@ COMPATIBLE_MACHINE = "olinuxino-a20"
 inherit kernel
 require recipes-kernel/linux/linux-yocto.inc
 
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/groeck/linux-staging.git;branch=hwmon-next \
            file://defconfig \
 "
