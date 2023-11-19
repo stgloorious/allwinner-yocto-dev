@@ -1,1 +1,7 @@
-build
+build/cache
+build/sstate-cache
+build/tmp
+build/tmp-glibc
+build/download
+*.log
+*.lock
