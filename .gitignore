@@ -2,6 +2,6 @@ build/cache
 build/sstate-cache
 build/tmp
 build/tmp-glibc
-build/download
+build/downloads
 *.log
 *.lock
