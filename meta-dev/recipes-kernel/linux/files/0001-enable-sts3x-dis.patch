@@ -1,0 +1,31 @@
+diff --git a/arch/arm/boot/dts/allwinner/sun7i-a20-olinuxino-micro.dts b/arch/arm/boot/dts/allwinner/sun7i-a20-olinuxino-micro.dts
+index a1b89b2a2999..9e28f498800e 100644
+--- a/arch/arm/boot/dts/allwinner/sun7i-a20-olinuxino-micro.dts
++++ b/arch/arm/boot/dts/allwinner/sun7i-a20-olinuxino-micro.dts
+@@ -136,6 +136,10 @@ hdmi_out_con: endpoint {
+ &i2c0 {
+ 	status = "okay";
+ 
++	sts3x@0 {
++		compatible = "sensirion,sht3x";
++	};
++
+ 	axp209: pmic@34 {
+ 		reg = <0x34>;
+ 		interrupt-parent = <&nmi_intc>;
+diff --git a/arch/arm/boot/dts/allwinner/sun7i-a20-olinuxino-micro.dts b/arch/arm/boot/dts/allwinner/sun7i-a20-olinuxino-micro.dts
+index a1b89b2a2999..4098c2569920 100644
+--- a/arch/arm/boot/dts/allwinner/sun7i-a20-olinuxino-micro.dts
++++ b/arch/arm/boot/dts/allwinner/sun7i-a20-olinuxino-micro.dts
+@@ -136,6 +136,11 @@ hdmi_out_con: endpoint {
+ &i2c0 {
+ 	status = "okay";
+ 
++	sts3x: sts3x@4a {
++		reg = <0x4a>;
++		compatible = "sensirion,sts3x";
++	};
++
+ 	axp209: pmic@34 {
+ 		reg = <0x34>;
+ 		interrupt-parent = <&nmi_intc>;
