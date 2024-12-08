@@ -6,8 +6,6 @@ require recipes-kernel/linux/linux-yocto.inc
 
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/groeck/linux-staging.git;branch=hwmon-next \
-           file://0001-enable-sts3x-dis.patch \
-           file://enable-sht3x.cfg \
            file://defconfig \
 "
 SRC_URI[sha256sum] = "f9a4f91b609f7d332a5f2be01ab86336fa00149fae6bdc19f16fa19f78802d43"
