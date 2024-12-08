@@ -1,4 +1,6 @@
 # Example Yocto Setup for A20-Olinuxino MICRO (Allwinner A20)
+[![Build](https://github.com/stgloorious/allwinner-yocto-dev/actions/workflows/build.yml/badge.svg)](https://github.com/stgloorious/allwinner-yocto-dev/actions/workflows/build.yml)
+
 This is a template setup to build a Linux distribution using Yocto Styhead
 that runs on the Olimex A20 Olinuxino MICRO board.
 
