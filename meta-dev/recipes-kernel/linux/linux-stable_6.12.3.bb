@@ -6,7 +6,10 @@ require recipes-kernel/linux/linux-yocto.inc
 
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
-SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git;branch=master;rev=${PV}"
+KERNEL_FEATURES:remove = "cfg/fs/vfat.scc"
+
+SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git;branch=linux-6.12.y;rev=v${PV} \
+           file://defconfig"
 
 S="${WORKDIR}/git"
 
