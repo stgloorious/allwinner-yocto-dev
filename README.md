@@ -18,3 +18,9 @@ $ sudo locale-gen en_US.UTF-8
 source ./oe-init-build-env
 bitbake core-image-minimal
 ~~~
+If you want to boot from the micro SD card, create an image:
+~~~
+cd build/tmp/deploy/images/olinuxino-a20
+wic create core-image-minimal-sunxi-sdcard-image.wks -e core-image-minimal
+~~~
+Copy the image to your SD card using `dd`.
