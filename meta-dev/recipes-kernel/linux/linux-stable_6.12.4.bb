@@ -1,8 +1,7 @@
-SUMMARY = "Linux stable v6.12.3"
+SUMMARY = "Linux stable v6.12.4"
 COMPATIBLE_MACHINE = "olinuxino-a20"
 
 inherit kernel
-require recipes-kernel/linux/linux-yocto.inc
 
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
