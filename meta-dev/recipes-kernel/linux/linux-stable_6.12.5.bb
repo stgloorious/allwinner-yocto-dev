@@ -1,4 +1,4 @@
-SUMMARY = "Linux stable v6.12.4"
+SUMMARY = "Linux stable v6.12.5"
 COMPATIBLE_MACHINE = "olinuxino-a20"
 
 inherit kernel
