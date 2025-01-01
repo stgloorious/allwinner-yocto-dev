@@ -12,5 +12,5 @@
 	branch = styhead
 [submodule "meta-sunxi"]
 	path = meta-sunxi
-	url = https://github.com/linux-sunxi/meta-sunxi.git
-	branch = master
+	url = https://github.com/stgloorious/meta-sunxi.git
+	branch = stgloor/mmc-alias
